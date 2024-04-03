@@ -1,0 +1,10 @@
+typedef struct intLinkedList intLinkedList;
+typedef struct intLinkedListNode intLinkedListNode;
+struct intLinkedList *newIntLinkedList(void);
+int getNumberFromNode(struct intLinkedListNode *node);
+struct intLinkedListNode *getILLHead(struct intLinkedList *list);
+struct intLinkedListNode *getILLNextNode(struct intLinkedListNode *node);
+struct intLinkedListNode *newIntLinkedListNode(int data);
+int insertIntToLinkedList(struct intLinkedList *list , int data);
+int freeIntLinkedList(struct intLinkedList *list);
+int extractNumbersFromString(char *str , struct intLinkedList *list);
